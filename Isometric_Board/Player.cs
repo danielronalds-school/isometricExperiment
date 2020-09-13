@@ -45,7 +45,7 @@ namespace Isometric_Board
 
         public void updateAnimation()
         {
-            if(animationDelay >= maxAnimationDelay)
+            if (animationDelay >= maxAnimationDelay)
             {
                 if (currentAnimation <= (maxAnimation / 2))
                 {
@@ -64,7 +64,8 @@ namespace Isometric_Board
                 currentAnimation++;
 
                 animationDelay = 0;
-            } else
+            }
+            else
             {
                 animationDelay++;
             }
@@ -76,14 +77,14 @@ namespace Isometric_Board
             {
                 //playerRec.X += (2 * playerSpeed);
                 //playerRec.Y -= (1 * playerSpeed);
-                foreach(RenderComponent component in components)
+                foreach (RenderComponent component in components)
                 {
                     component.RenderRect.X -= (2 * playerSpeed);
                     component.RenderRect.Y += (1 * playerSpeed);
                 }
             }
 
-            if(left)
+            if (left)
             {
                 //playerRec.X -= (2 * playerSpeed);
                 //playerRec.Y += (1 * playerSpeed);
@@ -94,7 +95,7 @@ namespace Isometric_Board
                 }
             }
 
-            if(up)
+            if (up)
             {
                 //playerRec.X -= (2 * playerSpeed);
                 //playerRec.Y -= (1 * playerSpeed);
@@ -105,7 +106,7 @@ namespace Isometric_Board
                 }
             }
 
-            if(down)
+            if (down)
             {
                 //playerRec.X += (2 * playerSpeed);
                 //playerRec.Y += (1 * playerSpeed);
@@ -116,10 +117,11 @@ namespace Isometric_Board
                 }
             }
 
-            if(right || left || up || down)
+            if (right || left || up || down)
             {
                 maxAnimationDelay = 3;
-            } else
+            }
+            else
             {
                 maxAnimationDelay = 6;
             }

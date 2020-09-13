@@ -153,6 +153,26 @@ namespace Isometric_Board.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap player_eyes_left {
+            get {
+                object obj = ResourceManager.GetObject("player_eyes_left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap player_eyes_right {
+            get {
+                object obj = ResourceManager.GetObject("player_eyes_right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap player_main {
             get {
                 object obj = ResourceManager.GetObject("player_main", resourceCulture);
